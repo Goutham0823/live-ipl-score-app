@@ -1,0 +1,91 @@
+/* 🎨 Color Palette */
+:root {
+  --primary-color: #1e3a8a;       /* Deep Blue */
+  --secondary-color: #facc15;     /* Yellow */
+  --accent-color: #f97316;        /* Orange */
+  --bg-color: #f1f5f9;            /* Light Gray-Blue */
+  --text-color: #1f2937;          /* Dark Gray */
+}
+
+/* 🌐 General Layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* 🔝 Header & Footer */
+header, footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* 🔘 Buttons */
+button {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.6rem;
+  color: #1e293b;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #ea580c;
+  transform: scale(0.98);
+}
+
+/* 📦 Containers */
+.container {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* 🧾 Cards */
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* 🏠 Home Page Styles */
+.home-container {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.home-container h1 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+/* 🏏 Match info icons */
+.icon {
+  font-size: 1.2rem;
+  margin-right: 0.4rem;
+}
